@@ -1,0 +1,59 @@
+{
+  "name": "@cybercoder-naj/theme-switcher",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A fancy Vue component for Theme Switching",
+  "homepage": "https://github.com/cybercoder-naj/theme-switcher#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cybercoder-naj/theme-switcher"
+  },
+  "bugs": {
+    "url": "https://github.com/cybercoder-naj/theme-switcher/issues"
+  },
+  "license": "MIT",
+  "author": "Nishant Aanjaney Jalan (https://cybercoder-naj.github.io/)",
+  "files": [
+    "dist",
+    "src/components"
+  ],
+  "keywords": [
+    "vue",
+    "vue3",
+    "vuejs",
+    "nuxt",
+    "theme-switcher"
+  ],
+  "main": "./dist/theme-switcher.umd.cjs",
+  "module": "./dist/theme-switcher.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/theme-switcher.js",
+      "require": "./dist/theme-switcher.umd.cjs"
+    },
+    "./dist/style.css": "./dist/theme-switcher.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.23"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "bun-types": "^1.2.2",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
+  }
+}
